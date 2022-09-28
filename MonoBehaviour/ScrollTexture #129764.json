@@ -1,0 +1,16 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 14
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 13
+  },
+  "m_Name": "",
+  "scrollSpeed": {
+    "x": 0.0,
+    "y": 0.5
+  }
+}

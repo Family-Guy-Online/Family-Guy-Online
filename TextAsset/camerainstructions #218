@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<camerainstructions>
+	<camerainstruction name="public">
+		<SPN_Default0>
+			<State_1>
+				<Player_Target>
+					<position>98.18966,3.683288,10.60314</position>
+					<rotation>14.5,329.9999,1.763726E-06</rotation>
+				</Player_Target>
+			</State_1>
+		</SPN_Default0>
+	</camerainstruction>
+</camerainstructions>

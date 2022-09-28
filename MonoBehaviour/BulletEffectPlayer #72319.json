@@ -1,0 +1,18 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 22
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 16
+  },
+  "m_Name": "",
+  "m_bDoLogging": 0,
+  "FXObjectName": "",
+  "bulletName": "FX_bone",
+  "bulletMeshName": "",
+  "startOffset": 0.3,
+  "endOffset": 0.3
+}

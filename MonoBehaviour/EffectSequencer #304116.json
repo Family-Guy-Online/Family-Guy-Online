@@ -1,0 +1,17 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 13
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 10
+  },
+  "m_Name": "",
+  "StartFrame": 20,
+  "DurationFrames": 40,
+  "TriggeredExternally": 0,
+  "StartCountdown": -0.02,
+  "DurationCountdown": -0.006666664
+}

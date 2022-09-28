@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects world="KylesHouse" gridsize="1000" numxgrids="1" numzgrids="1" initialmap="KylesHouse" combatworld="true">
+
+  <object name="Kyle" type="MediumEnemy">
+    <model>
+      <name>npc_custom_kyle_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+      <type>npc</type>
+    </model>
+    <relevantsethelper>IncludeClients</relevantsethelper>
+    <tacticscontroller>
+      <aggroRangeSleepy>0</aggroRangeSleepy>
+      <aggroRangeDefault>15.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+      <shortrange>
+        <minattacktime>1.0</minattacktime>
+        <maxattacktime>3.0</maxattacktime>
+      </shortrange>
+      <longrange>
+        <minattacktime>2.0</minattacktime>
+        <maxattacktime>4.0</maxattacktime>
+      </longrange>
+    </tacticscontroller>
+    <cameradata>
+      <deathcam>true</deathcam>
+      <!--<deathcampitch>50</deathcampitch>
+      <deathcamdistance>2.5</deathcamdistance>-->
+    </cameradata>
+    <combatdata>
+      <hitpoints>30</hitpoints>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <skills>
+      <skills.List>kylePaperThrow</skills.List>
+      <skills.List>kylePaperSmash</skills.List>
+    </skills>
+    <audio>
+      <clip.List>kyleDeath</clip.List>
+      <clip.List>kyleGetHit</clip.List>
+      <clip.List>kyleBlurbRandom</clip.List>
+    </audio>
+    <propmanager>
+      <defaultrightweapon>wpn_newsPaper_mdl</defaultrightweapon>
+    </propmanager>
+    <animationtree>npc/kyle.xml</animationtree>
+    <objectsetuphelperfunc>KyleSetupCallback</objectsetuphelperfunc>
+    <serverscript.List>KyleBullyAI</serverscript.List>
+    <objectTrigger.List>
+      <gatewayfunc>KyleObjectTriggerGatewayFunc</gatewayfunc>
+      <radius>9.0</radius>
+      <enteraud>kyleBlurbRandom</enteraud>
+      <allclients>false</allclients>
+      <releventclients>false</releventclients>
+    </objectTrigger.List>
+  </object>
+
+  <object name="bedroom door">
+    <model>
+      <name>door_mdl</name>
+      <scale>1.0</scale>
+    </model>
+    <interactionhandler>
+      <range>10</range>
+      <interactiongatewayfunc>BedRoomDoorGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <physics>
+      <type>box</type>
+      <size>0.5,2.5,1.8</size>
+      <center>0,1.25,-0.9</center>
+    </physics>
+    <selectable>false</selectable>
+    <customcursor>
+      <type>gears</type>
+    </customcursor>
+    <audio>
+      <clip.List>evidenceLockerOpen</clip.List>
+    </audio>
+    <statefulObject>
+      <state.List>
+        <name>Closed</name>
+        <action.List>
+          <func>SetAnim</func>
+          <param0>Take 001</param0>
+          <param1>HoldStart</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Open</name>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>evidenceLockerOpen</param0>
+        </action.List>
+        <transition.List>
+          <func>SetAnim</func>
+          <param0>Take 001</param0>
+          <param1>Play</param1>
+        </transition.List>
+        <action.List>
+          <func>SetAnim</func>
+          <param0>Take 001</param0>
+          <param1>HoldEnd</param1>
+        </action.List>
+        <action.List>
+          <func>RemoveCollider</func>
+        </action.List>
+      </state.List>
+    </statefulObject>
+  </object>
+
+
+</objects>

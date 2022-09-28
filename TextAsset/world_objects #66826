@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects world="CreationZone" gridsize="1000" numxgrids="1" numzgrids="1" initialmap="CreationZone">
+
+</objects>

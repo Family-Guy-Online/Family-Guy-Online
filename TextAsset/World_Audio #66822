@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<audio>
+<audiosource name="aud_music_loop_characterCreator2">
+  <clipname>aud_music_loop_characterCreator1</clipname>
+  <cliptype>music</cliptype>
+  <minDist>500.0</minDist>
+  <maxDist>500.0</maxDist>
+  <autoplay>true</autoplay>
+  <streamed>true</streamed>
+  <loop>true</loop>
+  <volume>0.7</volume>
+</audiosource>
+</audio>

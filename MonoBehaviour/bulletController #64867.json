@@ -1,0 +1,55 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 13
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 10
+  },
+  "m_Name": "",
+  "m_bDoLogging": 0,
+  "endPoint": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "moveSpeed": 10.0,
+  "maxDist": 80.0,
+  "lifeAfterHit": 0.0,
+  "explosion": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "trail": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "bullet": {
+    "m_FileID": 0,
+    "m_PathID": 14
+  },
+  "randomBullets": [],
+  "fireBullet": 0,
+  "m_verticalArc": {
+    "m_enabled": 0,
+    "m_minHeight": 1.0,
+    "m_maxHeight": 1.0
+  },
+  "shouldArc": 0,
+  "randomizeArc": 0,
+  "minDegree": 0.0,
+  "maxDegree": 0.0,
+  "definedArc": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "curviness": 0,
+  "spin": {
+    "x": 5.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}

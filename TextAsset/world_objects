@@ -1,0 +1,4061 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<objects world="Suburbs" gridsize="130" numxgrids="5" numzgrids="5" relsetsizex="4400" relsetsizez="4800" initialmap="suburbs" backdrop="true" overworld="true">
+
+  <object name="Peterdactyl" type="Peterdactyl Quest Giver">
+    <questgiver>
+      <questgiverindicator>
+        <inprogress>QG UpgradeMe Indicator</inprogress>
+      </questgiverindicator>
+	  <quest.List>
+		<prerequisite>CompletedNoFarmingQuests</prerequisite>
+        <name>peterdactyl_spot1_1</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedOneOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot1_2</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedTwoOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot1_3</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+        <name>peterdactyl_spot1_4</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	   <clientmodels>
+		<vfx>vfx_generic_poofappearslow</vfx>
+		<animationtree>npc/Peterdactyl.xml</animationtree>
+		<quest.List>
+		  <name>peterdactyl_spot1_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_4_id</name>
+		</quest.List>
+	    <states>
+		  <state.List>
+		    <number>0</number>
+  		    <model>
+		      <type>npc</type>
+		      <name>npc_custom_peterdactylGreenEgg_mdl</name>
+		      <scale>1.0</scale>
+		      <hasFaceController>true</hasFaceController>
+		    </model>
+		  </state.List>
+	      <state.List>
+		    <number>1</number>
+		    <model>
+		      <type>npc</type>
+		      <name>npc_custom_peterdactylBlueEgg_mdl</name>
+		      <scale>1.0</scale>
+		      <hasFaceController>true</hasFaceController>
+		    </model>
+		  </state.List>
+		  <state.List>
+		    <number>2</number>
+		    <model>
+		      <type>npc</type>
+		      <name>npc_custom_peterdactylPurpleEgg_mdl</name>
+		      <scale>1.0</scale>
+		      <hasFaceController>true</hasFaceController>
+		    </model>
+		  </state.List>
+	    </states>
+	  </clientmodels>
+	   <clientanimations>
+	    <updatewhenoffscreen>true</updatewhenoffscreen>
+		<quest.List>
+		  <name>peterdactyl_spot1_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot1_4_id</name>
+		</quest.List>
+	  <subquests>
+	    <subquest.List>
+          <number>-1</number>
+          <loop>idle</loop>
+        </subquest.List>
+        <subquest.List>
+          <number>0</number>
+          <loop>idle2</loop>
+          <enter>hatch</enter>
+        </subquest.List>
+		<subquest.List>
+          <number>1</number>
+          <loop>idle3a</loop>
+		  <loop2>idle3b</loop2>
+          <enter>hatch2</enter>
+        </subquest.List>
+        <subquest.List>
+          <number>2</number>
+          <enter>fly</enter>
+		  <loop>idle4</loop>
+        </subquest.List>
+		<subquest.List>
+		  <number>3</number>
+          <enter>fly</enter>
+		  <loop>idle</loop>
+		</subquest.List>
+	  </subquests>
+	  </clientanimations>
+    </questgiver>
+  </object>	
+	
+  <object name="Peterdactyl2" type="Peterdactyl Quest Giver">
+    <questgiver>
+      <questgiverindicator>
+        <inprogress>QG UpgradeMe Indicator</inprogress>
+      </questgiverindicator>
+	  <quest.List>
+		<prerequisite>CompletedNoFarmingQuests</prerequisite>
+        <name>peterdactyl_spot2_1</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedOneOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot2_2</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedTwoOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot2_3</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+        <name>peterdactyl_spot2_4</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+	  <clientmodels>
+		<quest.List>
+		  <name>peterdactyl_spot2_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_4_id</name>
+		</quest.List>
+		<vfx>vfx_generic_poofappearslow</vfx>
+		<animationtree>npc/Peterdactyl.xml</animationtree>
+		<states>
+		  <state.List>
+			<number>0</number>
+			<model>
+			  <type>npc</type>
+			  <name>npc_custom_peterdactylGreenEgg_mdl</name>
+			  <scale>1.0</scale>
+			  <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		    <state.List>
+			  <number>1</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylBlueEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+			<state.List>
+			  <number>2</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylPurpleEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		  </states>
+	  </clientmodels>
+	  <clientanimations>
+		<updatewhenoffscreen>true</updatewhenoffscreen>
+		<quest.List>
+		  <name>peterdactyl_spot2_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot2_4_id</name>
+		</quest.List>
+		  <subquests>
+  		    <subquest.List>
+ 	          <number>-1</number>
+	          <loop>idle</loop>
+	        </subquest.List>
+            <subquest.List>
+	          <number>0</number>
+	          <loop>idle2</loop>
+	          <enter>hatch</enter>
+	        </subquest.List>
+			<subquest.List>
+	          <number>1</number>
+	          <loop>idle3a</loop>
+			  <loop2>idle3b</loop2>
+	          <enter>hatch2</enter>
+	        </subquest.List>
+	        <subquest.List>
+	          <number>2</number>
+	          <enter>fly</enter>
+			  <loop>idle4</loop>
+	        </subquest.List>
+			<subquest.List>
+			  <number>3</number>
+	          <enter>fly</enter>
+			  <loop>idle</loop>
+			</subquest.List>
+		  </subquests>
+	  </clientanimations>
+    </questgiver>
+  </object>	
+	
+  <object name="Peterdactyl3" type="Peterdactyl Quest Giver">
+    <questgiver>
+      <questgiverindicator>
+        <inprogress>QG UpgradeMe Indicator</inprogress>
+      </questgiverindicator>
+	  <quest.List>
+		<prerequisite>CompletedNoFarmingQuests</prerequisite>
+        <name>peterdactyl_spot3_1</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+	  <quest.List>
+		<prerequisite>CompletedOneOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot3_2</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedTwoOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot3_3</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+        <name>peterdactyl_spot3_4</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <clientmodels>
+		<quest.List>
+		  <name>peterdactyl_spot3_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_4_id</name>
+		</quest.List>
+		  <vfx>vfx_generic_poofappearslow</vfx>
+		  <animationtree>npc/Peterdactyl.xml</animationtree>
+		  <states>
+			<state.List>
+			  <number>0</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylGreenEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		    <state.List>
+			  <number>1</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylBlueEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+			<state.List>
+			  <number>2</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylPurpleEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		  </states>
+	  </clientmodels>
+	  <clientanimations>
+		<updatewhenoffscreen>true</updatewhenoffscreen>
+		<quest.List>
+		  <name>peterdactyl_spot3_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot3_4_id</name>
+		</quest.List>
+		  <subquests>
+  		    <subquest.List>
+ 	          <number>-1</number>
+	          <loop>idle</loop>
+	        </subquest.List>
+            <subquest.List>
+	          <number>0</number>
+	          <loop>idle2</loop>
+	          <enter>hatch</enter>
+	        </subquest.List>
+			<subquest.List>
+	          <number>1</number>
+	          <loop>idle3a</loop>
+			  <loop2>idle3b</loop2>
+	          <enter>hatch2</enter>
+	        </subquest.List>
+	        <subquest.List>
+	          <number>2</number>
+	          <enter>fly</enter>
+			  <loop>idle4</loop>
+	        </subquest.List>
+			<subquest.List>
+			  <number>3</number>
+	          <enter>fly</enter>
+			  <loop>idle</loop>
+			</subquest.List>
+		  </subquests>
+	  </clientanimations>
+    </questgiver>
+  </object>	
+  <object name="Peterdactyl4" type="Peterdactyl Quest Giver">
+    <questgiver>
+      <questgiverindicator>
+        <inprogress>QG UpgradeMe Indicator</inprogress>
+      </questgiverindicator>
+	  <quest.List>
+		<prerequisite>CompletedNoFarmingQuests</prerequisite>
+        <name>peterdactyl_spot4_1</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+	  <quest.List>
+		<prerequisite>CompletedOneOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot4_2</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedTwoOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot4_3</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+        <name>peterdactyl_spot4_4</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+      <clientmodels>
+		<quest.List>
+		  <name>peterdactyl_spot4_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_4_id</name>
+		</quest.List>
+		  <vfx>vfx_generic_poofappearslow</vfx>
+		  <animationtree>npc/Peterdactyl.xml</animationtree>
+		  <states>
+			<state.List>
+			  <number>0</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylGreenEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		    <state.List>
+			  <number>1</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylBlueEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+			<state.List>
+			  <number>2</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylPurpleEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		  </states>
+	  </clientmodels>	
+	  <clientanimations>
+		<updatewhenoffscreen>true</updatewhenoffscreen>
+		<quest.List>
+		  <name>peterdactyl_spot4_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot4_4_id</name>
+		</quest.List>
+		  <subquests>
+  		    <subquest.List>
+ 	          <number>-1</number>
+	          <loop>idle</loop>
+	        </subquest.List>
+            <subquest.List>
+	          <number>0</number>
+	          <loop>idle2</loop>
+	          <enter>hatch</enter>
+	        </subquest.List>
+			<subquest.List>
+	          <number>1</number>
+	          <loop>idle3a</loop>
+			  <loop2>idle3b</loop2>
+	          <enter>hatch2</enter>
+	        </subquest.List>
+	        <subquest.List>
+	          <number>2</number>
+	          <enter>fly</enter>
+			  <loop>idle4</loop>
+	        </subquest.List>
+			<subquest.List>
+			  <number>3</number>
+	          <enter>fly</enter>
+			  <loop>idle</loop>
+			</subquest.List>
+		  </subquests>
+	  </clientanimations>
+    </questgiver>
+  </object>	
+  <object name="Peterdactyl5" type="Peterdactyl Quest Giver">
+    <questgiver>
+      <questgiverindicator>
+        <inprogress>QG UpgradeMe Indicator</inprogress>
+      </questgiverindicator>
+	  <quest.List>
+		<prerequisite>CompletedNoFarmingQuests</prerequisite>
+        <name>peterdactyl_spot5_1</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+	  <quest.List>
+		<prerequisite>CompletedOneOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot5_2</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+		<prerequisite>CompletedTwoOrLessFarmingQuests</prerequisite>
+        <name>peterdactyl_spot5_3</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>	
+	  <quest.List>
+        <name>peterdactyl_spot5_4</name>
+		<repeatabletype>hours:0</repeatabletype>
+      </quest.List>
+	  <clientmodels>
+		<vfx>vfx_generic_poofappearslow</vfx>
+		<quest.List>
+		  <name>peterdactyl_spot5_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_4_id</name>
+		</quest.List>
+		  <animationtree>npc/Peterdactyl.xml</animationtree>
+		  <states>
+			<state.List>
+			  <number>0</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylGreenEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		    <state.List>
+			  <number>1</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylBlueEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+			<state.List>
+			  <number>2</number>
+			  <model>
+			    <type>npc</type>
+			    <name>npc_custom_peterdactylPurpleEgg_mdl</name>
+			    <scale>1.0</scale>
+			    <hasFaceController>true</hasFaceController>
+			  </model>
+			</state.List>
+		  </states>
+	  </clientmodels>	
+	  <clientanimations>
+		<updatewhenoffscreen>true</updatewhenoffscreen>
+		<quest.List>
+		  <name>peterdactyl_spot5_1_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_2_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_3_id</name>
+		</quest.List>
+		<quest.List>
+		  <name>peterdactyl_spot5_4_id</name>
+		</quest.List>
+		  <subquests>
+  		    <subquest.List>
+ 	          <number>-1</number>
+	          <loop>idle</loop>
+	        </subquest.List>
+            <subquest.List>
+	          <number>0</number>
+	          <loop>idle2</loop>
+	          <enter>hatch</enter>
+	        </subquest.List>
+			<subquest.List>
+	          <number>1</number>
+	          <loop>idle3a</loop>
+			  <loop2>idle3b</loop2>
+	          <enter>hatch2</enter>
+	        </subquest.List>
+	        <subquest.List>
+	          <number>2</number>
+	          <enter>fly</enter>
+			  <loop>idle4</loop>
+	        </subquest.List>
+			<subquest.List>
+			  <number>3</number>
+	          <enter>fly</enter>
+			  <loop>idle</loop>
+			</subquest.List>
+		  </subquests>
+	  </clientanimations>
+    </questgiver>
+  </object>	
+	
+  <object name="Peter Suburbs" type="Peter Quest Giver">
+    <physics>
+      <type>capsule</type>
+      <radius>1.25</radius>
+      <height>1.25</height>
+      <center>-0.5,0.75,0</center>
+      <onground>false</onground>
+    </physics>
+    <objectTrigger.List>
+      <radius>5.0</radius>
+      <enteranim>transitionToStanding</enteranim>
+      <leaveanim>transitionToSitting</leaveanim>
+    </objectTrigger.List>
+    <animationtree>npc/Peter Quest Giver - Laying Down.xml</animationtree>
+    <propmanager>
+      <defaultrightweapon>wpn_beerCan_mdl</defaultrightweapon>
+    </propmanager>
+    <questgiver>
+      <quest.List>
+        <name>peters_hat_weight</name>
+        <notfinishedquestmessage>peters_hat_weight_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <quest.List>
+        <name>bill_cosby_sweater</name>
+        <notfinishedquestmessage>bill_cosby_sweater_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <quest.List>
+        <name>indoor_hot_air_balloon</name>
+        <notfinishedquestmessage>indoor_hot_air_balloon_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <quest.List>
+        <name>trash_lois_signs</name>
+        <notfinishedquestmessage>trash_lois_signs_not_finished_id</notfinishedquestmessage>
+        <repeatabletype>hours:2</repeatabletype>
+      </quest.List>
+      <noquestsavailablemessage>peter_suburbs_no_quests_id</noquestsavailablemessage>
+	  
+    </questgiver>
+	  <audio>
+	    <clip.List>peterBlurbRandom</clip.List>
+	    <clip.List>peterQuestFailRandom</clip.List>
+	    <clip.List>peterQuestCompleteRandom</clip.List>
+	    <clip.List>peterBlurbGreeting</clip.List>
+	    <clip.List>peterLoisSignsIntro</clip.List>
+	    <clip.List>peterLoisSignsFail</clip.List>
+	    <clip.List>peterLoisSignsComplete</clip.List>
+	    <clip.List>peterCosbySweaterIntro</clip.List>
+	    <clip.List>peterCosbySweaterFail</clip.List>
+	    <clip.List>peterCosbySweaterComplete</clip.List>
+	    <clip.List>peterHatWeightIntro</clip.List>
+	    <clip.List>peterHatWeightFail</clip.List>
+	    <clip.List>peterHatWeightComplete</clip.List>
+	    <clip.List>peterHotairBaloonIntro</clip.List>
+	    <clip.List>peterHotairBaloonFail</clip.List>
+	    <clip.List>peterHotairBaloonComplete</clip.List>
+	  </audio>
+  </object>
+  
+  <object name="Stewie Suburbs" type="Stewie Quest Giver">
+    <objectTrigger.List>
+      <radius>5.0</radius>
+      <enteranim>transitionToStanding</enteranim>
+      <leaveanim>transitionToSitting</leaveanim>
+    </objectTrigger.List>
+    <animationtree>npc/Stewie Quest Giver.xml</animationtree>
+    <questgiver>
+      <quest.List>
+        <name>get_cheerleader_megaphone</name>
+        <notfinishedquestmessage>megaphone_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <quest.List>
+        <name>princes_of_the_multiverse_part_1</name>
+        <notfinishedquestmessage>princes_of_the_multiverse_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <quest.List>
+        <name>hat_for_fashion_show</name>
+        <notfinishedquestmessage>hat_for_fashion_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+    </questgiver>
+    <audio>
+	    <clip.List>stewieBlurbRandom</clip.List>
+	    <clip.List>stewieQuestFailRandom</clip.List>
+	    <clip.List>stewieQuestCompleteRandom</clip.List>
+	    <clip.List>stewieSandbox</clip.List>
+	  </audio>
+  </object>
+
+  <object name="Joe Swanson" type="Joe Base">
+    <interactionhandler>
+      <interactiongatewayfunc>JoeSwansonInteractFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>joeSwansonBlurbRandom</clip.List>
+    </audio>
+  </object>
+
+  <objecttype name="Cosby Combatant" type="MediumEnemy">
+    <model>
+      <type>npc</type>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <animationtree>npc/multiracialGang.xml</animationtree>
+    <combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+	  <hpregentime>999</hpregentime>
+    </combatdata>
+    <tacticscontroller>
+      <aggroRangeSleepy>5.0</aggroRangeSleepy>
+      <aggroRangeDefault>12.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+    <objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+    <lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>90</dropchance>
+      <lootTableID>basic_loot</lootTableID>
+    </lootdropactor>
+  </objecttype>
+
+  <object name="Cosby Dancer A" type ="Cosby Combatant">
+    <model>
+      <name>npc_custom_cosbyDancerA_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>menuSmash</skills.List>
+    </skills>
+  </object>
+
+  <object name="Cosby Dancer B" type ="Cosby Combatant">
+    <model>
+      <name>npc_custom_cosbyDancerB_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>sideKick</skills.List>
+    </skills>
+  </object>
+
+  <object name="Cosby Dancer C" type ="Cosby Combatant">
+    <model>
+      <name>npc_custom_cosbyDancerC_mdl</name>
+    </model>
+   <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>menuSmash</skills.List>
+    </skills>
+  </object>
+
+  <object name="Cosby Dancer D" type ="Cosby Combatant">
+    <model>
+      <name>npc_custom_cosbyDancerD_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>sideKick</skills.List>
+    </skills>
+  </object>
+  
+  <objecttype name="Bitch Brian" type="MediumEnemy">
+    <model>
+      <name>npc_iconic_bitchBrian_mdl</name>
+      <type>npc</type>
+      <scale>1.3</scale>
+      <hasFaceController>True</hasFaceController>
+    </model>
+    <animationtree>npc/NPC_Enemy_Dog.xml</animationtree>
+    <characterlocomotionsettings>
+      <faceclient>false</faceclient>
+    </characterlocomotionsettings>
+    <tacticscontroller>
+      <aggroRangeSleepy>5.0</aggroRangeSleepy>
+      <aggroRangeDefault>15.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+    <lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>100</dropchance>
+      <lootTableID>basic_loot</lootTableID>
+    </lootdropactor>
+    <combatdata>
+      <classreference>dog</classreference>
+      <levelreference>3</levelreference>
+      <xp>20</xp>
+    </combatdata>
+	<objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+    <audioclass>brianBitch</audioclass>
+	<audio>
+	  <clip.List>bitchBrianBlurbRandom</clip.List>
+	  <clip.List>dogCopDeath</clip.List>
+	  <clip.List>dogBreath</clip.List>
+	  <clip.List>legBite</clip.List>
+	  <clip.List>onMyMark</clip.List>
+	  <clip.List>throwBone</clip.List>
+	  <clip.List>buttScoot</clip.List>
+	</audio>
+  </objecttype>
+  
+  <object name="Bitch Brian A" type ="Bitch Brian">
+    <model>
+      <name>npc_iconic_bitchBrian_mdl</name>
+    </model>
+    <skills>
+      <skills.List>legBite</skills.List>
+	  <skills.List>onMyMark</skills.List>
+    </skills>
+  </object>
+  
+  <object name="Bitch Brian B" type ="Bitch Brian">
+    <model>
+      <name>npc_iconic_bitchBrian_mdl</name>
+    </model>
+    <skills>
+      <skills.List>legBite</skills.List>
+	  <skills.List>dogBreath</skills.List>
+    </skills>
+  </object>
+  
+  <object name="Bitch Brian C" type ="Bitch Brian">
+    <model>
+      <name>npc_iconic_bitchBrian_mdl</name>
+    </model>
+    <skills>
+      <skills.List>onMyMark</skills.List>
+	  <skills.List>throwMeABone</skills.List>
+    </skills>
+  </object>
+  
+   <object name="Bitch Brian D" type ="Bitch Brian">
+    <model>
+      <name>npc_iconic_bitchBrian_mdl</name>
+    </model>
+    <skills>
+     <skills.List>legBite</skills.List>
+      <skills.List>buttScoot</skills.List>
+    </skills>
+  </object>
+ 
+  <!--===============================================================================-->
+  <!--====================Overworld Combat Perpetual Spawners=========================-->
+  <!--===============================================================================-->
+ 
+    <objecttype name="OCM_FootballFeildEnemy" type="MediumEnemy">
+    <model>
+      <type>npc</type>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <animationtree>npc/multiracialGang.xml</animationtree>
+    <combatdata>
+	  <hpregentime>999</hpregentime>
+    </combatdata>
+    <tacticscontroller>
+      <aggroRangeSleepy>5.0</aggroRangeSleepy>
+      <aggroRangeDefault>12.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+    <objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+    <lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>75</dropchance>
+      <lootTableID>basic_loot</lootTableID>
+    </lootdropactor>
+  </objecttype>
+
+  <object name="FootballPlayer_0" type ="OCM_FootballFeildEnemy">
+    <model>
+      <name>npc_custom_seadogA_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>menuSmash</skills.List>
+	  <skills.List>sideKick</skills.List>
+    </skills>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="FootballPlayer_1" type ="OCM_FootballFeildEnemy">
+    <model>
+      <name>npc_custom_seadogA_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>menuSmash</skills.List>
+    </skills>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>5</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="FootballPlayer_2" type ="OCM_FootballFeildEnemy">
+    <model>
+      <name>npc_custom_seadogB_mdl</name>
+    </model>
+   <skills>
+      <skills.List>menuSmash</skills.List>
+	  <skills.List>sideKick</skills.List>
+    </skills>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>3</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="FootballPlayer_3" type ="OCM_FootballFeildEnemy">
+    <model>
+      <name>npc_custom_seadogC_mdl</name>
+    </model>
+    <skills>
+      <skills.List>menuSmash</skills.List>
+	  <skills.List>sideKick</skills.List>
+    </skills>
+    <combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+
+ <!--===============================================================================-->   
+ 
+  <objecttype name="OCM_FTBLField_Cheerleaders" type="MediumEnemy">
+    <model>
+      <type>npc</type>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <tacticscontroller>
+      <aggroRangeSleepy>0.0</aggroRangeSleepy>
+      <aggroRangeDefault>8.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+    <combatdata>
+		<hpregentime>999</hpregentime>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <characterlocomotionsettings>
+      <faceclient>false</faceclient>
+    </characterlocomotionsettings>
+    <animationtree>npc/Cheerleader Combat.xml</animationtree>
+    <audio>
+      <clip.List>femaleDeath</clip.List>
+    </audio>
+    <skills>
+      <skills.List>cheerleaderclaw</skills.List>
+      <skills.List>cheerleaderpummel</skills.List>
+      <skills.List>cheerleaderhate</skills.List>
+    </skills>
+    <lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>70</dropchance>
+      <lootTableID>Easy_loot</lootTableID>
+    </lootdropactor>
+    <objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+  </objecttype>
+  
+    <object name="Cheerleader_0" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleader_mdl</name>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="Cheerleader_1" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleaderAfro_mdl</name>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>2</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="Cheerleader_2" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleaderAsian_mdl</name>
+    </model>
+    <combatdata>
+      <classreference>teen</classreference>
+      <levelreference>2</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="Cheerleader_3" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleaderPonytail_mdl</name>
+    </model>
+    <combatdata>
+      <classreference>teen</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="Cheerleader_4" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleaderShorthairBlonde_mdl</name>
+    </model>
+    <combatdata>
+      <classreference>teen</classreference>
+      <levelreference>8</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="Cheerleader_5" type="OCM_FTBLField_Cheerleaders">
+    <model>
+      <name>npc_custom_cheerleaderLongHair_mdl</name>
+    </model>
+    <combatdata>
+      <classreference>teen</classreference>
+      <levelreference>5</levelreference>
+    </combatdata>
+  </object>
+  
+   <!--===============================================================================--> 
+  
+  <objecttype name="PlaygroundKids" type="MediumEnemy">
+    <model>
+      <hasFaceController>true</hasFaceController>
+      <type>npc</type>
+    </model>
+    <tacticscontroller>
+      <aggroRangeSleepy>0</aggroRangeSleepy>
+      <aggroRangeDefault>15.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+	<lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>65</dropchance>
+      <lootTableID>basic_loot</lootTableID>
+    </lootdropactor>
+    <audio>
+	  <clip.List>claw</clip.List>
+	  <clip.List>impactGeneric</clip.List>
+    </audio>
+    <animationtree>npc/NPC_Enemy_Teen.xml</animationtree>
+    <objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+  </objecttype>
+  
+   <object name="PlyGrndKid_01" type="PlaygroundKids">
+    <model>
+      <name>npc_custom_genMaleTeen001_mdl</name>
+      <scale>1.0</scale>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>3</levelreference>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+	
+    <skills>
+      <skills.List>claw</skills.List>
+      <skills.List>pummel</skills.List>
+	  <skills.List>PlyGrndGroinKick</skills.List>
+    </skills>
+  </object>
+    
+  <object name="PlyGrndKid_02" type="PlaygroundKids">
+    <model>
+      <name>npc_custom_genMaleTeen002_mdl</name>
+      <scale>1.0</scale>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>1</levelreference>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <skills>
+      <skills.List>pummel</skills.List>
+	  <skills.List>PlyGrndGroinKick</skills.List>
+	  <skills.List>claw</skills.List>
+    </skills>
+  </object>
+  
+   <object name="PlyGrndKid_03" type="PlaygroundKids">
+    <model>
+      <name>npc_custom_genMaleTeen003_mdl</name>
+      <scale>1.0</scale>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>1</levelreference>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <skills>
+	  <skills.List>hateYouAll</skills.List>
+      <skills.List>PlyGrndGroinKick</skills.List>
+	  <skills.List>claw</skills.List>
+    </skills>
+  </object>
+  
+    <object name="PlyGrndKid_04" type="PlaygroundKids">
+    <model>
+      <name>npc_custom_genMaleTeen004_mdl</name>
+      <scale>1.0</scale>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>1</levelreference>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <skills>
+      <skills.List>PlyGrndGroinKick</skills.List>
+      <skills.List>shoeBoxDiarrhea</skills.List>
+	  <skills.List>claw</skills.List>
+    </skills>
+  </object>
+  
+  <object name="PlyGrndKid_05" type="PlaygroundKids">
+    <model>
+      <name>npc_custom_genMaleTeen005_mdl</name>
+      <scale>1.0</scale>
+    </model>
+	<combatdata>
+      <classreference>teen</classreference>
+      <levelreference>3</levelreference>
+      <deathoverride>death</deathoverride>
+    </combatdata>
+    <skills>
+      <skills.List>hateYouAll</skills.List>
+      <skills.List>shoeBoxDiarrhea</skills.List>
+	  <skills.List>claw</skills.List>
+    </skills>
+  </object>
+  
+ <!--===============================================================================--> 
+ 
+ <objecttype name="OCM_BaseBallEnemy" type="MediumEnemy">
+    <model>
+      <type>npc</type>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <animationtree>npc/multiracialGang.xml</animationtree>
+    <combatdata>
+	  <hpregentime>999</hpregentime>
+    </combatdata>
+    <tacticscontroller>
+      <aggroRangeSleepy>5.0</aggroRangeSleepy>
+      <aggroRangeDefault>12.0</aggroRangeDefault>
+      <aggroUseSleepy>true</aggroUseSleepy>
+    </tacticscontroller>
+    <objectsetuphelperfunc>GenericSetupCallback</objectsetuphelperfunc>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+    <lootdropactor>
+      <objectname>ClamLootBag</objectname>
+      <dropchance>75</dropchance>
+      <lootTableID>basic_loot</lootTableID>
+    </lootdropactor>
+  </objecttype>
+
+  <object name="BaseballPlayer_0" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerA_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+	  <skills.List>BaseballSideKick</skills.List>
+	  <skills.List>BaseballToss</skills.List>
+    </skills>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="BaseballPlayer_1" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerB_mdl</name>
+    </model>
+    <skills>
+      <skills.List>knee</skills.List>
+	  <skills.List>menuSmash</skills.List>
+      <skills.List>BaseballBatOverhead</skills.List>
+	  <skills.List>BaseballToss</skills.List>
+    </skills>
+	<propmanager>
+      <defaultrightweapon>wpn_baseballBat_mdl</defaultrightweapon>
+    </propmanager>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>5</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="BaseballPlayer_2" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerC_mdl</name>
+    </model>
+   <skills>
+      <skills.List>knee</skills.List>
+      <skills.List>BaseballBatOverhead</skills.List>
+	  <skills.List>BaseballBatTornado</skills.List>
+    </skills>
+	<propmanager>
+      <defaultrightweapon>wpn_baseballBat_mdl</defaultrightweapon>
+    </propmanager>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>3</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="BaseballPlayer_3" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerD_mdl</name>
+    </model>
+    <skills>
+      <skills.List>menuSmash</skills.List>
+	  <skills.List>BaseballToss</skills.List>
+    </skills>
+    <combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+  
+   <object name="BaseballPlayer_4" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerE_mdl</name>
+    </model>
+    <skills>
+      <skills.List>menuSmash</skills.List>
+      <skills.List>BaseballBatOverhead</skills.List>
+	  <skills.List>BaseballBatTornado</skills.List>
+    </skills>
+	<propmanager>
+      <defaultrightweapon>wpn_baseballBat_mdl</defaultrightweapon>
+    </propmanager>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>5</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="BaseballPlayer_5" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerF_mdl</name>
+    </model>
+   <skills>
+      <skills.List>menuSmash</skills.List>
+      <skills.List>BaseballBatOverhead</skills.List>
+	  <skills.List>BaseballBatTornado</skills.List>
+    </skills>
+	<propmanager>
+      <defaultrightweapon>wpn_baseballBat_mdl</defaultrightweapon>
+    </propmanager>
+	<combatdata>
+      <classreference>dad</classreference>
+      <levelreference>3</levelreference>
+    </combatdata>
+  </object>
+
+  <object name="BaseballPlayer_6" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerG_mdl</name>
+    </model>
+    <skills>
+      <skills.List>BaseballSideKick</skills.List>
+      <skills.List>BaseballBatOverhead</skills.List>
+	  <skills.List>BaseballBatTornado</skills.List>
+    </skills>
+	<propmanager>
+      <defaultrightweapon>wpn_baseballBat_mdl</defaultrightweapon>
+    </propmanager>
+    <combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+  
+   <object name="BaseballPlayer_7" type ="OCM_BaseBallEnemy">
+    <model>
+      <name>npc_custom_baseballPlayerH_mdl</name>
+    </model>
+    <skills>
+      <skills.List>menuSmash</skills.List>
+	  <skills.List>BaseballSideKick</skills.List>
+	  <skills.List>BaseballToss</skills.List>
+    </skills>
+    <combatdata>
+      <classreference>dad</classreference>
+      <levelreference>1</levelreference>
+    </combatdata>
+  </object>
+  
+  <!--===============================================================================-->
+  <!--================================ELECTION QUEST=================================-->
+  <!--===============================================================================-->
+  
+  <object name="Election Brian" type="Brian Quest Giver">
+    <model>
+      <name>npc_iconic_brianSuit_mdl</name>
+    </model>
+    <questgiver>
+      <quest.List>
+        <prerequisite>BrianQuestPrerequisite</prerequisite>
+        <name>election_brian</name>
+        <notfinishedquestmessage>election_brian_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailableaudio>brianBlurbRandom</noquestsavailableaudio>
+      <noquestsavailablemessage>election_brian_no_quests_id</noquestsavailablemessage>
+    </questgiver>
+  </object>
+
+  <object name="Election Lois" type="Lois Quest Giver">
+    <model>
+      <name>npc_iconic_loisSuit_mdl</name>
+    </model>
+    <questgiver>
+      <quest.List>
+        <prerequisite>LoisQuestPrerequisite</prerequisite>
+        <name>election_lois</name>
+        <notfinishedquestmessage>election_lois_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailableaudio>loisBlurbRandom</noquestsavailableaudio>
+      <noquestsavailablemessage>election_lois_no_quests_id</noquestsavailablemessage>
+    </questgiver>
+  </object>
+
+  <object name="Election Peter" type="Peter Quest Giver">
+    <model>
+      <name>npc_iconic_peterSuit_mdl</name>
+    </model>
+    <questgiver>
+      <quest.List>
+        <prerequisite>PeterQuestPrerequisite</prerequisite>
+        <name>election_peter</name>
+        <notfinishedquestmessage>election_peter_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailableaudio>peterBlurbRandom</noquestsavailableaudio>
+      <noquestsavailablemessage>election_peter_no_quests_id</noquestsavailablemessage>
+    </questgiver>
+  </object>
+
+  <object name="Election Stewie" type="Stewie Quest Giver">
+    <model>
+      <name>npc_iconic_stewieSuit_mdl</name>
+    </model>
+    <animationtree>npc/Stewie Standing Quest Giver.xml</animationtree>
+    <questgiver>
+      <quest.List>
+        <prerequisite>StewieQuestPrerequisite</prerequisite>
+        <name>election_stewie</name>
+        <notfinishedquestmessage>election_stewie_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailableaudio>stewieBlurbRandom</noquestsavailableaudio>
+      <noquestsavailablemessage>election_stewie_no_quests_id</noquestsavailablemessage>
+    </questgiver>
+  </object>
+
+  <object name="Election Sign" >
+    <model>
+      <name>prp_electionSignBryan_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <center>0,0.75,0</center>
+      <size>0.8,1.5,0.2</size>
+    </physics>
+    <interactionhandler>
+      <range>5</range>
+      <interactiongatewayfunc>ElectionSignGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <statefulObject>
+      <state.List>
+        <name>Broken Peter</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignBryan_broken_geo</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Peter SFX</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignStewie_broken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>destroyLoisSign</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Normal Peter</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignBryan_geo</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Lois</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignStewie_broken_geo</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Lois SFX</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignBryan_broken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>destroyLoisSign</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Normal Lois</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSignStewie_geo</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <selectable>false</selectable>
+    <customcursor>
+      <type>gears</type>
+      <distance>5</distance>
+    </customcursor>
+    <audio>
+      <clip.List>destroyLoisSign</clip.List>
+    </audio>
+  </object>
+
+  <object name="Election Poster" >
+    <model>
+      <name>prp_electionPosterBryan_mdl</name>
+      <type>prop</type>
+      <scale>0.5</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <center>0,0,0.15</center>
+      <size>0.65,0.9,0.3</size>
+    </physics>
+    <interactionhandler>
+      <range>5</range>
+      <interactiongatewayfunc>ElectionPosterGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <statefulObject>
+      <state.List>
+        <name>Broken Peter</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterBryanBroken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradientBroken_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Peter SFX</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterStewieBroken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradientBroken_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>destroyLoisSign</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Normal Peter</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterBryan_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradient_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Lois</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterStewieBroken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradientBroken_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken Lois SFX</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterBryanBroken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradientBroken_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>destroyLoisSign</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Normal Lois</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionPosterStewie_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>shadowGradient_geo</param0>
+          <param1>Show</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <selectable>false</selectable>
+    <customcursor>
+      <type>gears</type>
+      <distance>5</distance>
+    </customcursor>
+    <audio>
+      <clip.List>destroyLoisSign</clip.List>
+    </audio>
+  </object>
+
+  <objecttype name="Election Male" type="Generic Male">
+    <animationtree>npc/Election Male.xml</animationtree>
+  </objecttype>
+
+  <object name="Election Male Pedestrian0" type="Election Male">
+    <model>
+      <name>npc_custom_genMaleCasual001_mdl</name>
+    </model>
+  </object>
+
+  <object name="Election Male Pedestrian1" type="Election Male">
+    <model>
+      <name>npc_custom_genMaleCasual002_mdl</name>
+    </model>
+  </object>
+
+  <object name="Election Male Pedestrian2" type="Election Male">
+    <model>
+      <name>npc_custom_genMaleSemiFormal001_mdl</name>
+    </model>
+  </object>
+  
+  <objecttype name="Election Male Picket" type="Generic Male">
+    <animationtree>npc/Election Male Picket.xml</animationtree>
+  </objecttype>
+
+  <object name="Picket Male Pedestrian0" type="Election Male Picket">
+    <model>
+      <name>npc_custom_genMaleCasual003_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionBryan_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Male Pedestrian1" type="Election Male Picket">
+    <model>
+      <name>npc_custom_genMaleCasual004_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionLois_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Male Pedestrian2" type="Election Male Picket">
+    <model>
+      <name>npc_custom_genMaleCasual005_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionPeter_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Male Pedestrian3" type="Election Male Picket">
+    <model>
+      <name>npc_custom_genMaleSemiFormal003_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionStewie_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <objecttype name="Election Female" type="Generic Female">
+    <animationtree>npc/Election Female.xml</animationtree>
+  </objecttype>
+
+  <object name="Election Female Pedestrian0" type="Election Female">
+    <model>
+      <name>npc_custom_genFemCasual001_mdl</name>
+    </model>
+  </object>
+
+  <object name="Election Female Pedestrian1" type="Election Female">
+    <model>
+      <name>npc_custom_genFemCasual002_mdl</name>
+    </model>
+  </object>
+
+  <object name="Election Female Pedestrian2" type="Election Female">
+    <model>
+      <name>npc_custom_genFemCasual003_mdl</name>
+    </model>
+  </object>
+
+  <objecttype name="Election Female Picket" type="Generic Female">
+    <animationtree>npc/Election Female Picket.xml</animationtree>
+  </objecttype>
+  
+  <object name="Picket Female Pedestrian0" type="Election Female Picket">
+    <model>
+      <name>npc_custom_genFemCasual004_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionBryan_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Female Pedestrian1" type="Election Female Picket">
+    <model>
+      <name>npc_custom_genFemCasual005_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionLois_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Female Pedestrian2" type="Election Female Picket">
+    <model>
+      <name>npc_custom_genFemCasual006_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionPeter_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <object name="Picket Female Pedestrian3" type="Election Female Picket">
+    <model>
+      <name>npc_custom_genFemCasual007_mdl</name>
+    </model>
+    <propmanager>
+      <defaultrightweapon>wpn_electionStewie_mdl</defaultrightweapon>
+    </propmanager>
+  </object>
+
+  <!--===============================================================================-->
+  <!--================================ELECTION QUEST=================================-->
+  <!--===============================================================================-->
+
+  <object name="Trash Can" type="Loot_Prop" >
+    <model>
+      <name>KickableTrashCan</name>
+    </model>
+    <physics>
+      <type>box</type>
+      <center>0,0.35,0</center>
+      <size>0.8,0.95,0.8</size>
+    </physics>
+    <interactionhandler>
+      <range>5</range>
+      <interactiongatewayfunc>TrashCanGatewayFunc</interactiongatewayfunc>
+      <interactioncallback>TrashCanInteractionFunc</interactioncallback>
+    </interactionhandler>
+    <lootinteractionhandler>
+      <lootTableID>trashcan_loot</lootTableID>
+      <enabled>false</enabled>
+      <oncollectvfx>vfx_status_sparkleCollectClams2</oncollectvfx>
+      <onbonuscollectvfx>vfx_status_sparkleCollectClams2_bonusModified</onbonuscollectvfx>
+    </lootinteractionhandler>
+    <statefulObject>
+      <state.List>
+        <name>Init</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>detailGarbage_broken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetLootHandleEnabled</func>
+          <param0>false</param0>
+        </action.List>
+        <action.List>
+          <func>EnableInteraction</func>
+          <param0>false</param0>
+        </action.List>
+        <action.List>
+          <func>EnableCursorOverEffect</func>
+          <param0>false</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>NotBroken</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>detailGarbage_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetLootHandleEnabled</func>
+          <param0>true</param0>
+        </action.List>
+        <action.List>
+          <func>EnableCursorOverEffect</func>
+          <param0>true</param0>
+        </action.List>
+        <action.List>
+          <func>EnableInteraction</func>
+          <param0>true</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_status_sparklesSmall</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>detailGarbage_broken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>garbageCanInteraction</param0>
+        </action.List>
+        <action.List>
+          <func>SetLootHandleEnabled</func>
+          <param0>false</param0>
+        </action.List>
+        <action.List>
+          <func>EnableInteraction</func>
+          <param0>false</param0>
+        </action.List>
+        <action.List>
+          <func>EnableCursorOverEffect</func>
+          <param0>false</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_status_sparklesSmall</param0>
+          <param1>Stop</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>garbageCanInteraction</clip.List>
+    </audio>
+	<externalStatus>addStackingClamBonus</externalStatus>
+  </object>
+
+  <object name="Lois Sign" >
+    <model>
+      <name>prp_electionSign_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <center>0,0.35,0</center>
+      <size>0.8,0.95,0.35</size>
+    </physics>
+    <interactionhandler>
+      <range>5</range>
+      <interactiongatewayfunc>LoisSignsGatewayFunc</interactiongatewayfunc>
+      <interactioncallback>LoisSignsInteractionFunc</interactioncallback>
+    </interactionhandler>
+    <statefulObject>
+      <state.List>
+        <name>Init</name>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSign_broken_geo</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>NotBroken</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSign_geo</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Broken</name>
+        <time>0.5</time>
+        <action.List>
+          <func>SetModel</func>
+          <param0>electionSign_broken_geo</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_Suburbs_ElectionSignDestroy</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>destroyLoisSign</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <selectable>false</selectable>
+    <customcursor>
+      <type>gears</type>
+      <distance>5</distance>
+    </customcursor>
+    <audio>
+      <clip.List>destroyLoisSign</clip.List>
+    </audio>
+  </object>
+  
+	<object name ="Flux Capacitor" type="CollectableObject">
+		<physics>
+			<type>box</type>
+			<size>0.5,0.5,0.5</size>
+			<center>0,0,0</center>
+		</physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+	<objecttype name="Alternator" type="CollectableObject">
+		<physics>
+			<type>box</type>
+			<size>1.3,0.25,2</size>
+			<center>0,0,0</center>
+		</physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+    <interactionhandler>
+      <interactioncallback>AlternatorInteractionFunc</interactioncallback>
+    </interactionhandler>
+  </objecttype>
+
+  <object name="Alternator0" type="Alternator"/>
+  
+  <object name="Alternator1" type="Alternator"/>
+  
+  <object name="Alternator2" type="Alternator"/>
+  
+  <object name="Alternator3" type="Alternator"/>
+
+  <object name="Alternator Smoke Effect">
+    <physics>
+      <type>box</type>
+      <size>1,1,1</size>
+      <center>0,0.5,0</center>
+    </physics>
+    <statefulObject>
+      <state.List>
+        <name>Present</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_backfire</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <serverscript.List>LimitedLifeScript</serverscript.List>
+  </object>
+
+  <object name="Tool Box" type="CollectableObject">
+    <model>
+      <name>prp_toolBox_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>1.2,0.7,0.5</size>
+      <center>0,0.35,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Connie Dimico" type="Non-Interactive Character">
+    <model>
+      <type>npc</type>
+      <name>npc_custom_connieDiMico_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <animationtree>npc/Connie Quest Giver.xml</animationtree>
+    <!--<interactionhandler>
+      <interactiongatewayfunc>ConnieDiMicoInteractFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>connieDimicoBlurbRandom</clip.List>
+    </audio>-->
+  </object>
+
+  <objecttype name="Multiverse Portal">
+    <name>Multiverse Portal</name>
+    <physics>
+      <type>sphere</type>
+      <radius>1.5</radius>
+      <center>0,4.5,0</center>
+    </physics>
+    <interactionhandler>
+      <range>5</range>
+      <clickabledoor>transition</clickabledoor>
+      <audio>multiversePortal</audio>
+    </interactionhandler>
+    <customcursor>
+      <type>Doors</type>
+    </customcursor>
+  </objecttype>
+
+  <object name="Multiverse Portal Entrance" type="Multiverse Portal">
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_portal</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+  </object>
+
+  <object name="Multiverse Portal Exit" type="Multiverse Portal">
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_portaldark</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+  </object>
+
+  <object name="Compliment Guy">
+    <statefulObject>
+      <inittype>Wait</inittype>
+      <state.List>
+        <name>Wait</name>
+        <time>1.0</time>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Compliment</name>
+        <time>15.0</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>complimentguyBlurb</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>complimentguyBlurb</clip.List>
+    </audio>
+  </object>
+  
+  <object name="Mort Goldman" type="Base Mort Goldman">
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+  </object>
+
+  <object name="Newspaper" type="CollectableObject">
+    <model>
+      <name>prp_newsPaper_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.4,0.3,0.8</size>
+      <center>0,0.15,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Postman Bruce" type="Bruce Base">
+    <model>
+      <name>npc_custom_bruceMailman_mdl</name>
+    </model>
+    <interactionhandler>
+      <interactiongatewayfunc>PostmanBruceInteractFunc</interactiongatewayfunc>
+      <range>10</range>
+    </interactionhandler>
+    <audio>
+      <clip.List>bruceMailman</clip.List>
+    </audio>
+  </object>
+
+  <object name="Propane Tank" type="CollectableObject">
+    <model>
+      <name>prp_propaneTank_mdl</name>
+      <type>prop</type>
+      <scale>1.6</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.5,0.7,0.5</size>
+      <center>0,0.35,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Balloon BBQ" type="CollectableObject">
+    <physics>
+      <type>box</type>
+      <size>0.75,0.65,0.75</size>
+      <center>0,0.325,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Joes BBQ">
+    <model>
+      <name>prp_bbq_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.7,0.6,0.7</size>
+      <center>0,0.3,0</center>
+    </physics>
+  </object>
+
+  <object name="Delivery Box" type="CollectableObject">
+    <model>
+      <name>prp_cardboardBox_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>1.1,0.9,0.9</size>
+      <center>0,0.45,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="RATSEG" type="RATSEG Quest Giver">
+    <questgiver>
+      <quest.List>
+        <name>ten_speed_bike_parts</name>
+        <notfinishedquestmessage>ten_speed_bike_parts_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailablemessage>ratseg_nothing_to_give_id</noquestsavailablemessage>
+    </questgiver>
+	<audio>
+      <clip.List>ratsegBlurbRandom</clip.List>
+    </audio>
+  </object>
+  
+  <!-- ============ -->
+  <!-- SUBURBS ISDS -->
+  <!-- ============ -->
+
+  <object name="ISD - Racist Sunflower" type="InteractiveSetDecoration">
+    <model>
+      <name>npc_custom_racistSunflower_mdl</name>
+      <type>npc</type>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+    <propmanager>
+      <defaultrightweapon>wpn_cross_mdl</defaultrightweapon>
+    </propmanager>
+    <physics>
+      <type>capsule</type>
+      <height>2</height>
+      <radius>0.6</radius>
+      <center>0,1,0</center>
+    </physics>
+    <animationtree>npc/racistSunflower.xml</animationtree>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>15.0</time>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>death</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_suburbs_racistburning</param0>
+          <param1>Play</param1>
+          <param2>StemB_joint</param2>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_suburbs_racistcross</param0>
+          <param1>Play</param1>
+          <param2>WorldRoot1_joint</param2>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_suburbs_racistimpact</param0>
+          <param1>Play</param1>
+          <param2>WorldRoot1_joint</param2>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_suburbs_racistspark</param0>
+          <param1>Play</param1>
+          <param2>WorldRoot1_joint</param2>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>racistSunFlowerDeath</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>racistSunFlowerDeath</clip.List>
+	  <clip.List>racistSunFlower</clip.List>
+	</audio>
+    <characterlocomotionsettings>
+      <faceclient>true</faceclient>
+    </characterlocomotionsettings>
+    <interactionhandler>
+      <range>10</range>
+    </interactionhandler>
+    <ISD>
+      <description>racist_sunflower_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <objectTrigger.List>
+      <radius>5.0</radius>
+      <enteraud>racistSunFlower</enteraud>
+      <allclients>false</allclients>
+    </objectTrigger.List>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+  </object>
+
+  <object name="ISD - Midget In A Well" type="InteractiveSetDecoration">
+		<model>
+			<name>npc_custom_midgetInWell_mdl</name>
+			<type>npc</type>
+			<scale>1.0</scale>
+			<hasFaceController>true</hasFaceController>
+		</model>
+		<physics>
+			<type>sphere</type>
+			<radius>0.8</radius>
+			<center>-0.35,0,-0.8</center>
+		</physics>
+		<animationtree>npc/midgetInAWell.xml</animationtree>
+		<statefulObject>
+			<inittype>Normal</inittype>
+			<state.List>
+				<name>Normal</name>
+				<action.List>
+					<func>HideModelRetainCursor</func>
+				</action.List>
+			</state.List>
+			<state.List>
+				<name>Interact</name>
+				<time>8</time>
+				<action.List>
+				  <func>PlayCharacterSound</func>
+				  <param0>midgetInAWell2</param0>
+				</action.List>
+				<action.List>
+					<func>Show</func>
+				</action.List>
+				<action.List>
+					<func>PlayAnim</func>
+					<param0>cheer</param0>
+				</action.List>
+				<action.List>
+					<func>SetEffect</func>
+					<param0>vfx_suburbs_midgetInWellSplash</param0>
+					<param1>Play</param1>
+					<param2>WorldRoot1_joint</param2>
+				</action.List>
+			</state.List>
+		</statefulObject>
+		<ISD>
+			<description>midget_in_a_well_text_id</description>
+			<rewards>
+				<xp>50</xp>
+				<clams>25</clams>
+			</rewards>
+		</ISD>
+		<audio>
+		  <clip.List>midgetInAWell</clip.List>
+		  <clip.List>midgetInAWell2</clip.List>
+		</audio>
+		<clientscript.List>DummyChoreoState</clientscript.List>
+		<objectTrigger.List>
+			<radius>9</radius>
+			<enteraud>midgetInAWell</enteraud>
+			<allclients>false</allclients>
+		</objectTrigger.List>
+	</object>
+
+  <object name="ISD - Anthem Bike" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.3,1.2,0.55</size>
+      <center>0,0.6,0</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>24</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>dirtbikeRev</param0>
+        </action.List>
+		<action.List>
+		  <func>SetEffect</func>
+		  <param0>vfx_generic_bikeExhaust</param0>
+		  <param1>Play</param1>
+		</action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>dirtbikeRev</clip.List>
+    </audio>
+    <ISD>
+      <description>anthem_bike_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - PukePumpkin1" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.5,3,1.5</size>
+      <center>0,1.55,-0.5</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>30</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>pumpkinBarf</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_pumpkinbarf</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>pumpkinBarf</clip.List>
+    </audio>
+    <ISD>
+      <description>pukepumpkin1_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - PukePumpkin2" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.5,3,1.5</size>
+      <center>0,1.55,-0.5</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>30</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>pumpkinBarf</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_pumpkinbarf</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>pumpkinBarf</clip.List>
+    </audio>
+    <ISD>
+      <description>pukepumpkin2_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - PukePumpkin3" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.5,3,1.5</size>
+      <center>0,1.55,-0.5</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>30</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>pumpkinBarf</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_pumpkinbarf</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>pumpkinBarf</clip.List>
+    </audio>
+    <ISD>
+      <description>pukepumpkin3_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - PukePumpkin4" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.5,3,1.5</size>
+      <center>0,1.55,-0.5</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>30</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>pumpkinBarf</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_pumpkinbarf</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>pumpkinBarf</clip.List>
+    </audio>
+    <ISD>
+      <description>pukepumpkin4_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - PukePumpkin5" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.5,3,1.5</size>
+      <center>0,1.55,-0.5</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>30</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>pumpkinBarf</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_prop_pumpkinbarf</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>pumpkinBarf</clip.List>
+    </audio>
+    <ISD>
+      <description>pukepumpkin5_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+	
+	
+  <object name="Herbert" type="Herbert Base">
+    <animationtree>npc/Herbert Quest Giver.xml</animationtree>
+    <interactionhandler>
+      <range>10</range>
+      <interactiongatewayfunc>HerbertInteractFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>herbertBlurbRandom</clip.List>
+      <clip.List>HerbertBoysClubISDAudio</clip.List>
+    </audio>
+  </object>
+
+  <object name="ISD - Herbert - Boys Club Stand" type="InteractiveSetDecoration">
+    <physics>
+      <type>box</type>
+      <size>2.95,0.9,0.22</size>
+      <center>0,1.55,0.6</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>HideModelRetainCursor</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>1.0</time>
+        <action.List>
+          <func>HideModelRetainCursor</func>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <interactionhandler>
+      <range>10</range>
+      <interactiongatewayfunc>BoysClubStandGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <ISD>
+      <description>herbert_boys_club_stand_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <object name="ISD - Tell Lance Its Off" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_cellPhone_mdl</name>
+      <type>prop</type>
+      <scale>1.75</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.25</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>1.8</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>tellLance</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <ISD>
+      <description>Tell_Lance_Its_Off_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>tellLance</clip.List>
+    </audio>
+  </object>
+
+  <object name="ISD - Watch Ben Stiller" type="ISD - Watch">
+    <model>
+      <name>npc_custom_watchBen_mdl</name>
+     </model>
+    <animationtree>npc/Watch Ben Stiller.xml</animationtree>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>15.0</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>evenWatchBlurb</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>evenWatchBlurb</clip.List>
+    </audio>
+    <ISD>
+      <description>watch_ben_text_id</description>
+      <video>video_quest_theWatchEvan</video>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+  </object>
+
+  <!-- =================== -->
+  <!-- SUBURBS COLLECTIONS -->
+  <!-- =================== -->
+
+	<object name="Collect - Chris - HotDog" type="CollectionObject">
+		<collectablehandler>
+			<name>ChrisGriffinHotDog</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Peter - DirtBike" type="CollectionObject">
+		<collectablehandler>
+			<name>PeterGriffinDirtBike</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Stewie - Rupert" type="CollectionObject">
+		<collectablehandler>
+			<name>StewieGriffinRupert</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Stewie - SeeNSay" type="CollectionObject">
+		<collectablehandler>
+			<name>StewieGriffinSeeNSay</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Stewie - WeatherMachine" type="CollectionObject">
+		<collectablehandler>
+			<name>StewieGriffinWeatherMachine</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Brian - Prius" type="CollectionObject">
+		<collectablehandler>
+			<name>BrianGriffinPrius</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Brian - TennisBall" type="CollectionObject">
+		<collectablehandler>
+			<name>BrianGriffinTennisBall</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Brian - MangledBirdCarcass" type="CollectionObject">
+		<collectablehandler>
+			<name>BrianGriffinMangledBirdCarcass</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Lois - StationWagon" type="CollectionObject">
+		<collectablehandler>
+			<name>LoisGriffinStationWagon</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Meg - Pillowcase" type="CollectionObject">
+		<collectablehandler>
+			<name>MegGriffinPillowcase</name>
+		</collectablehandler>
+	</object>
+
+	<object name="Collect - Joe - Ramp" type="CollectionObject">
+		<collectablehandler>
+			<name>JoeSwansonRamp</name>
+		</collectablehandler>
+	</object>
+
+  <!--=======================================================-->
+  <!--====================Abandoned House====================-->
+  <!--=======================================================-->
+
+  <object name="Stewie Griffin - Abandoned House" type="Stewie Quest Giver">
+    <model>
+      <name>npc_iconic_stewieConstruction_mdl</name>
+    </model>
+    <animationtree>npc/Stewie Standing Quest Giver.xml</animationtree>
+    <questgiver>
+      <noquestsavailablemessage>stewie_abandoned_house_nothing_to_give_id</noquestsavailablemessage>
+	  <questgivericon>quest_portrait_stewieConstruction_ico</questgivericon>
+      <quest.List>
+        <name>project_house</name>
+        <notfinishedquestmessage>stewie_project_house_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+    </questgiver>
+    <interactionhandler>
+      <interactiongatewayfunc>AbandonedHouseStewieGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>stewieBlurbRandom</clip.List>
+      <clip.List>stewieProjectHouseIntro2</clip.List>
+      <clip.List>stewieProjectHouseIntro4</clip.List>
+      <clip.List>stewieProjectHouseIntro6</clip.List>
+      <clip.List>stewieProjectHouseFail1</clip.List>
+      <clip.List>stewieProjectHouseFail3</clip.List>
+      <clip.List>stewieProjectHouseFail5</clip.List>
+	  <clip.List>stewieProjectHouseComplete</clip.List>
+    </audio>
+  </object>
+
+  <object name="Brian Griffin - Abandoned House" type="Brian Base">
+    <model>
+      <name>npc_iconic_brianConstruction_mdl</name>
+    </model>
+    <interactionhandler>
+      <interactiongatewayfunc>BrianInteractFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>brianBlurbRandom</clip.List>
+      <clip.List>brianProjectHouseIntro1</clip.List>
+      <clip.List>brianProjectHouseIntro3</clip.List>
+      <clip.List>brianProjectHouseIntro5</clip.List>
+      <clip.List>brianProjectHouseFail2</clip.List>
+      <clip.List>brianProjectHouseFail4</clip.List>
+    </audio>
+  </object>
+
+  <object name="Collect - AbandonedHouse - Chandelier" type="CollectionObject">
+    <collectablehandler>
+      <name>AbandonedHouseBustedChandelier</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - AbandonedHouse - TapeMeasure" type="CollectionObject">
+    <collectablehandler>
+      <name>AbandonedHouseTapeMeasure</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - AbandonedHouse - Hacksaw" type="CollectionObject">
+    <collectablehandler>
+      <name>AbandonedHouseHacksaw</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - AbandonedHouse - CoffeeMaker" type="CollectionObject">
+    <collectablehandler>
+      <name>AbandonedHouseBrokenCoffeeMaker</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - AbandonedHouse - FilthyToilet" type="CollectionObject">
+    <collectablehandler>
+      <name>AbandonedHouseFilthyToilet</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--=====================Church Interior===================-->
+  <!--=======================================================-->
+
+  <object name="Confessional" >
+    <model>
+      <name>prp_confessional_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>2,3.25,1.4</size>
+      <center>0,1.625,-0.1</center>
+    </physics>
+    <animationtree>prp/herbertConfessional.xml</animationtree>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <interactionhandler>
+    </interactionhandler>
+    <selectable>false</selectable>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+  </object>
+
+  <object name="ISD - Herbert Confessional" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_confessional_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>2,3.25,1.4</size>
+      <center>0,1.625,-0.1</center>
+    </physics>
+    <animationtree>prp/herbertConfessional.xml</animationtree>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>15.0</time>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>active</param0>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>herbertConfessional</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>herbertConfessional</clip.List>
+    </audio>
+    <interactionhandler>
+      <range>10</range>
+    </interactionhandler>
+    <ISD>
+      <description>herbert_confessional_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+  </object>
+
+  <object name="ISD - Seamus Piano" type="InteractiveSetDecoration">
+    <model>
+      <name>npc_custom_seamus_mdl</name>
+      <type>npc</type>
+      <scale>1.0</scale>
+      <hasFaceController>True</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>2,3.25,1.4</size>
+      <center>0,1.625,-0.1</center>
+    </physics>
+    <animationtree>npc/seamusPiano.xml</animationtree>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>25.0</time>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>GBOF</param0>
+        </action.List>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>greatBallsOfFire</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <audio>
+      <clip.List>greatBallsOfFire</clip.List>
+    </audio>
+    <interactionhandler>
+      <range>10</range>
+    </interactionhandler>
+    <ISD>
+      <description>seamus_piano_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+  </object>
+
+  <object name="Collect - Lois - QuestForFur" type="CollectionObject">
+    <collectablehandler>
+      <name>LoisQuestForFur</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Church - CollectionPlate" type="CollectionObject">
+    <collectablehandler>
+      <name>SpoonerChurchCollectionPlate</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Church - Crucifix" type="CollectionObject">
+    <collectablehandler>
+      <name>SpoonerChurchCrucifix</name>
+    </collectablehandler>
+    <interactionhandler>
+      <range>15</range>
+    </interactionhandler>
+  </object>
+
+  <object name="Collect - Church - HolyWater" type="CollectionObject">
+    <collectablehandler>
+      <name>SpoonerChurchHolyWater</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Church - VirginMary" type="CollectionObject">
+    <collectablehandler>
+      <name>SpoonerChurchVirginMary</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--===================Goldman's House=====================-->
+  <!--=======================================================-->
+
+  <object name="Gold Shavings" type="CollectableObject">
+    <model>
+      <name>prp_jewelBox_geo</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>1.3,0.25,2</size>
+      <center>0,0,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Collect - GoldmansHouse - SpareMezuzah" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseSpareMezuzah</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - NeilMezuzah" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseNeilMezuzah</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - MortMezuzah" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseMortMezuzah</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - Menorah" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseMenorah</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - Enterprise" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseEnterprise</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - Quill" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseQuill</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - GoldmansHouse - EntranceMezuzah" type="CollectionObject">
+    <collectablehandler>
+      <name>GoldmanHouseEntranceMezuzah</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--======================Griffin House====================-->
+  <!--=======================================================-->
+
+  <object name="Chris Griffin" type="Chris Quest Giver">
+    <questgiver>
+      <noquestsavailablemessage>chris_griffin_house_nothing_to_give_id</noquestsavailablemessage>
+      <quest.List>
+        <name>big_date</name>
+        <notfinishedquestmessage>big_date_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+    </questgiver>
+	<audio>
+	  <clip.List>chrisBlurbRandom</clip.List>
+	  <clip.List>chrisQuestFailRandom</clip.List>
+	  <clip.List>chrisQuestCompleteRandom</clip.List>
+	  <clip.List>chrisStandUp</clip.List>
+	</audio>	
+  </object>
+  
+  <object name="Cheeseburger Helper" type ="Cheeseburger Helper Quest Giver">
+    <questgiver>
+      <noquestsavailablemessage>cheeseburger_helper_nothing_to_give_id</noquestsavailablemessage>
+      <quest.List>
+        <name>cheeseburger_helper</name>
+        <notfinishedquestmessage>cheeseburger_helper_quest_not_done_id</notfinishedquestmessage>
+      </quest.List>
+    </questgiver>
+  </object>
+
+  <object name="Hamburger Helper" type ="Hamburger Helper Base">
+    <interactionhandler>
+      <interactiongatewayfunc>HamburgerHelperGatewayFunc</interactiongatewayfunc>
+    </interactionhandler>
+  </object>
+
+  <object name="Tiny Taco - Cheese" type="CollectableObject">
+    <model>
+      <name>prp_cheese_mdl</name>
+      <type>prop</type>
+      <scale>1</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.35,0.3,0.5</size>
+      <center>0,0,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <!-- Stewie Collections -->
+
+  <object name="Collect - Stewie - CoolWhip" type="CollectionObject">
+    <collectablehandler>
+      <name>StewieGriffinCoolWhip</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Stewie - Crib" type="CollectionObject">
+    <collectablehandler>
+      <name>StewieGriffinCrib</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Stewie - HighChair" type="CollectionObject">
+    <collectablehandler>
+      <name>StewieGriffinHighChair</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Stewie - Octopus" type="CollectionObject">
+    <collectablehandler>
+      <name>StewieGriffinOctopus</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Stewie - RayGun" type="CollectionObject">
+    <collectablehandler>
+      <name>StewieGriffinRayGun</name>
+    </collectablehandler>
+  </object>
+
+  <!-- Chris Collections -->
+
+  <object name="Collect - Chris - BoogerJar" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinBoogerJar</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Chris - DeadFrog" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinDeadFrog</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Chris - DirtyMag" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinDirtyMag</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Chris - EvilMonkey" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinEvilMonkey</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Chris - LightSaber" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinLightSaber</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Chris - Lotion" type="CollectionObject">
+    <collectablehandler>
+      <name>ChrisGriffinLotion</name>
+    </collectablehandler>
+  </object>
+
+  <!-- Peter Collection -->
+
+  <object name="Collect - Peter - TV" type="CollectionObject">
+    <collectablehandler>
+      <name>PeterGriffinTV</name>
+    </collectablehandler>
+  </object>
+  
+  <object name="Collect - Peter - ThelmaPhoto" type="CollectionObject">
+		<collectablehandler>
+			<name>PeterGriffinThelmaPhoto</name>
+		</collectablehandler>
+  </object>
+	
+  <object name="Collect - Peter - WeddingPhoto" type="CollectionObject">
+		<collectablehandler>
+			<name>PeterGriffinWeddingPhoto</name>
+		</collectablehandler>
+  </object>  
+
+  <!-- Lois Collection -->
+
+  <object name="Collect - Lois - GroceryBag" type="CollectionObject">
+    <collectablehandler>
+      <name>LoisGriffinGroceryBag</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Lois - Piano" type="CollectionObject">
+    <collectablehandler>
+      <name>LoisGriffinPiano</name>
+    </collectablehandler>
+  </object>
+
+  <!-- Meg Collection -->
+
+  <object name="Collect - Meg - BuyMeARainbowCD" type="CollectionObject">
+    <collectablehandler>
+      <name>MegGriffinBuyMeARainbowCD</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Meg - HairPie" type="CollectionObject">
+    <collectablehandler>
+      <name>MegGriffinHairPie</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Meg - Diary" type="CollectionObject">
+    <collectablehandler>
+      <name>MegGriffinDiary</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Meg - LargePanties" type="CollectionObject">
+    <collectablehandler>
+      <name>MegGriffinLargePanties</name>
+    </collectablehandler>
+  </object>
+
+  <!-- Book Pages Mega Collection -->
+  
+  <objecttype name="Page Collectable Type" type="CollectableObjectCustomStates">
+    <model>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.3</radius>
+      <center>0,0.15,0</center>
+    </physics>	
+    <interactionhandler>
+      <range>8</range>
+    </interactionhandler>
+    <statefulObject>
+      <state.List>
+        <name>Present</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Hidden</name>
+    <action.List>
+	  <name>PageSFX</name>
+	  <func>PlayCharacterSound</func>
+	 <param0>pagesCrumpleInteraction</param0>
+	</action.List>
+        <action.List>
+          <func>Hide</func>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <spawnedcollectablehandler>
+      <name>SpeedofLovePage</name>
+    </spawnedcollectablehandler>
+    <customcursor>
+      <type>collectable</type>
+      <distance>8</distance>
+    </customcursor>
+    <relevantsethelper>ExcludeClients</relevantsethelper>
+	<audio>
+	  <clip.List>pagesCrumpleInteraction</clip.List>
+	</audio>	
+  </objecttype>
+
+  <object name="Page Collectable A" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable B" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable C" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable D" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable E" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable F" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable G" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable H" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="Page Collectable I" type="Page Collectable Type">
+    <model>
+      <name>prp_bookPage_geo</name>
+    </model>
+  </object>
+
+  <object name="SpeedOfLovePages">
+    <spawnedcollection>
+      <spawnpoints0>CLCSPN_PageCollection1,CLCSPN_PageCollection2,CLCSPN_PageCollection3,CLCSPN_PageCollection28,CLCSPN_PageCollection29,CLCSPN_PageCollection30,CLCSPN_PageCollection55,CLCSPN_PageCollection56,CLCSPN_PageCollection57</spawnpoints0>
+      <spawnpoints1>CLCSPN_PageCollection4,CLCSPN_PageCollection5,CLCSPN_PageCollection6,CLCSPN_PageCollection31,CLCSPN_PageCollection32,CLCSPN_PageCollection33,CLCSPN_PageCollection58,CLCSPN_PageCollection59,CLCSPN_PageCollection60</spawnpoints1>
+      <spawnpoints2>CLCSPN_PageCollection7,CLCSPN_PageCollection8,CLCSPN_PageCollection9,CLCSPN_PageCollection34,CLCSPN_PageCollection35,CLCSPN_PageCollection36,CLCSPN_PageCollection61,CLCSPN_PageCollection62,CLCSPN_PageCollection63</spawnpoints2>
+      <spawnpoints3>CLCSPN_PageCollection10,CLCSPN_PageCollection11,CLCSPN_PageCollection12,CLCSPN_PageCollection37,CLCSPN_PageCollection38,CLCSPN_PageCollection39,CLCSPN_PageCollection64,CLCSPN_PageCollection65,CLCSPN_PageCollection66</spawnpoints3>
+      <spawnpoints4>CLCSPN_PageCollection13,CLCSPN_PageCollection14,CLCSPN_PageCollection15,CLCSPN_PageCollection40,CLCSPN_PageCollection41,CLCSPN_PageCollection42,CLCSPN_PageCollection67,CLCSPN_PageCollection68,CLCSPN_PageCollection69</spawnpoints4>
+      <spawnpoints5>CLCSPN_PageCollection16,CLCSPN_PageCollection17,CLCSPN_PageCollection18,CLCSPN_PageCollection43,CLCSPN_PageCollection44,CLCSPN_PageCollection45,CLCSPN_PageCollection70,CLCSPN_PageCollection71,CLCSPN_PageCollection72</spawnpoints5>
+      <spawnpoints6>CLCSPN_PageCollection19,CLCSPN_PageCollection20,CLCSPN_PageCollection21,CLCSPN_PageCollection46,CLCSPN_PageCollection47,CLCSPN_PageCollection48,CLCSPN_PageCollection73,CLCSPN_PageCollection74,CLCSPN_PageCollection75</spawnpoints6>
+      <spawnpoints7>CLCSPN_PageCollection22,CLCSPN_PageCollection23,CLCSPN_PageCollection24,CLCSPN_PageCollection49,CLCSPN_PageCollection50,CLCSPN_PageCollection51,CLCSPN_PageCollection76,CLCSPN_PageCollection77,CLCSPN_PageCollection78</spawnpoints7>
+      <spawnpoints8>CLCSPN_PageCollection25,CLCSPN_PageCollection26,CLCSPN_PageCollection27,CLCSPN_PageCollection52,CLCSPN_PageCollection53,CLCSPN_PageCollection54,CLCSPN_PageCollection79,CLCSPN_PageCollection80,CLCSPN_PageCollection81</spawnpoints8>
+
+      <collectable0>
+        <type>Page Collectable A</type>
+        <spawnpointlist>spawnpoints0</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable0>
+      <collectable1>
+        <type>Page Collectable B</type>
+        <spawnpointlist>spawnpoints1</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable1>
+      <collectable2>
+        <type>Page Collectable C</type>
+        <spawnpointlist>spawnpoints2</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable2>
+      <collectable3>
+        <type>Page Collectable D</type>
+        <spawnpointlist>spawnpoints3</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable3>
+      <collectable4>
+        <type>Page Collectable E</type>
+        <spawnpointlist>spawnpoints4</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable4>
+      <collectable5>
+        <type>Page Collectable F</type>
+        <spawnpointlist>spawnpoints5</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable5>
+      <collectable6>
+        <type>Page Collectable G</type>
+        <spawnpointlist>spawnpoints6</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable6>
+      <collectable7>
+        <type>Page Collectable H</type>
+        <spawnpointlist>spawnpoints7</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable7>
+      <collectable8>
+        <type>Page Collectable I</type>
+        <spawnpointlist>spawnpoints8</spawnpointlist>
+        <initialspawnnum>5</initialspawnnum>
+      </collectable8>
+    </spawnedcollection>
+  </object>
+  
+  <object name="OBJ - MusicBox">
+    <model>
+      <name>prp_musicBox_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+  </object>
+
+  <object name="ISD - Victorian Ghost Dinner Guest" type="InteractiveSetDecoration">
+    <model>
+      <name>npc_custom_victorianGirlGhost_mdl</name>
+      <type>npc</type>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.5,0.5,0.5</size>
+      <center>0.15,0.1,0.25</center>
+    </physics>
+    <animationtree>npc/victorianGhost.xml</animationtree>
+    <audio>
+      <clip.List>victorianGhost</clip.List>
+    </audio>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>HideModelRetainCursor</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>15</time>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_poofappear</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_ghostlyaura</param0>
+          <param1>Play</param1>
+        </action.List>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+        <action.List>
+          <func>PlayCharacterSound</func>
+          <param0>victorianGhost</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Exit</name>
+        <time>0.4</time>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_poofappear</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <characterlocomotionsettings>
+      <faceclient>true</faceclient>
+    </characterlocomotionsettings>
+    <interactionhandler>
+      <range>10</range>
+    </interactionhandler>
+    <ISD>
+      <description>victorian_ghost_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <clientscript.List>DummyChoreoState</clientscript.List>
+  </object>
+
+  <object name="ISD - Birthday Card From Cleveland" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_birthdayCard_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.25</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>75</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>birthdayCard</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <ISD>
+      <description>cleveland_birthday_card_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>birthdayCard</clip.List>
+    </audio>
+  </object>
+
+  <object name="ISD - British News" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_hamRadio_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.25</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>45</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>britishRadio</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <ISD>
+      <description>british_news_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>britishRadio</clip.List>
+    </audio>
+  </object>
+
+  <object name="ISD - Palestinian Alarm Clock" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_alarmClock_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.25</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>1.8</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>palestinianAlarmClock</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Explosion</name>
+        <time>5</time>
+        <action.List>
+          <func>Hide</func>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_largeexplosion</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <ISD>
+      <description>palestinian_alarm_clock_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>palestinianAlarmClock</clip.List>
+    </audio>
+  </object>
+
+  <!--=======================================================-->
+  <!--===================Hartman's House=====================-->
+  <!--=======================================================-->
+
+  <object name="Dr Hartman" type="Dr Hartman Quest Giver">
+    <questgiver>
+      <quest.List>
+        <name>leg_transplant_video</name>
+        <notfinishedquestmessage>leg_transplant_video_not_finished_id</notfinishedquestmessage>
+      </quest.List>
+      <noquestsavailablemessage>dr_hartman_nothing_to_give_id</noquestsavailablemessage>
+    </questgiver>
+	<audio>
+	<clip.List>drHartmanBlurbRandom</clip.List>
+	</audio>
+  </object>
+  
+  <object name="Collect - HartmansHouse - Alarm" type="CollectionObject">
+    <collectablehandler>
+      <name>HartmanHouseAlarm</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HartmansHouse - Malpractice" type="CollectionObject">
+    <collectablehandler>
+      <name>HartmanHouseMalpractice</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HartmansHouse - SurgeryBook" type="CollectionObject">
+    <collectablehandler>
+      <name>HartmanHouseSurgeryBook</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HartmansHouse - Toothbrush" type="CollectionObject">
+    <collectablehandler>
+      <name>HartmanHouseToothbrush</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--===================Herbert's House=====================-->
+  <!--=======================================================-->
+
+  <object name="Collect - HerbertsHouse - JesseBowl" type="CollectionObject">
+    <collectablehandler>
+      <name>HerbertJesseBowl</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HerbertsHouse - ChrisPicture" type="CollectionObject">
+    <collectablehandler>
+      <name>HerbertChrisPicture</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HerbertsHouse - Medication" type="CollectionObject">
+    <collectablehandler>
+      <name>HerbertMedication</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - HerbertsHouse - RockingChair" type="CollectionObject">
+    <collectablehandler>
+      <name>HerbertRockingChair</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--=======================Kyles House=====================-->
+  <!--=======================================================-->
+
+  <object name="ISD - Chuck Berry Tasty Juice" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_chuckBerryTV_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <center>0,0.5,0</center>
+      <type>sphere</type>
+      <radius>1.0</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>1.8</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>chuckBerryTastyJuice</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <ISD>
+      <description>Chuck_Berry_Tasty_Juice_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>chuckBerryTastyJuice</clip.List>
+    </audio>
+  </object>
+  
+  <!--=======================================================-->
+  <!--=====================Quagmire House====================-->
+  <!--=======================================================-->
+
+  <object name="Quagmire" type="Quagmire Quest Giver">
+    <questgiver>
+      <noquestsavailablemessage>quagmire_nothing_to_give_id</noquestsavailablemessage>
+      <quest.List>
+        <name>quagmires_hot_date</name>
+        <notfinishedquestmessage>quagmires_hot_date_not_done_id</notfinishedquestmessage>
+      </quest.List>
+    </questgiver>
+	<audio>
+	  <clip.List>quagmireBlurbRandom</clip.List>
+	</audio>
+  </object>
+  
+  <object name="Cologne Bottle" type="CollectableObject">
+    <model>
+      <name>prp_cologne_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.3,0.35,0.175</size>
+      <center>0,0.175,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Collect - Quagmire - HeartShapedBed" type="CollectionObject">
+    <collectablehandler>
+      <name>QuagmireHeartShapedBed</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Quagmire - CeilingMirror" type="CollectionObject">
+    <collectablehandler>
+      <name>QuagmireCeilingMirror</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Quagmire - LoisDoll" type="CollectionObject">
+    <collectablehandler>
+      <name>QuagmireLoisDoll</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Quagmire - GolfClubs" type="CollectionObject">
+    <model>
+      <type>prop</type>
+      <name>prp_quagmireGolfClubs_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.5,0.75,0.3</size>
+      <center>0.05,0.375,0</center>
+    </physics>
+	  <collectablehandler>
+      <name>QuagmireGolfClubs</name>
+    </collectablehandler>
+  </object>
+
+  <!--=======================================================-->
+  <!--======================Swanson House====================-->
+  <!--=======================================================-->
+
+  <object name="Tiny Taco - Beef" type="CollectableObject">
+    <model>
+      <name>prp_groundBeef_mdl</name>
+      <type>prop</type>
+      <scale>1</scale>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.7,0.5,0.3</size>
+      <center>0,0,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="ISD - Susies Inner Voice" type="InteractiveSetDecoration">
+    <model>
+      <name>npc_custom_susieSwanson_mdl</name>
+      <type>npc</type>
+      <scale>1.0</scale>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>1,1,1</size>
+      <center>0,0.5,0</center>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>PlayAnim</func>
+          <param0>idle</param0>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>10</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>susieSwanson</param0>
+        </action.List>
+      </state.List>
+    </statefulObject>
+    <animationtree>npc/Susie Swanson.xml</animationtree>
+    <ISD>
+      <description>susies_inner_voice_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>susieSwanson</clip.List>
+    </audio>
+  </object>
+
+  <object name="Collect - Joe - Wheelchair" type="CollectionObject">
+    <collectablehandler>
+      <name>JoeSwansonWheelchair</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - ColostomyBag" type="CollectionObject">
+    <physics>
+      <type>box</type>
+      <size>0.3,0.5,0.2</size>
+      <center>0,0.15,0</center>
+    </physics>
+    <model>
+      <type>prop</type>
+      <name>prp_joeColostomyBag_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <collectablehandler>
+      <name>JoeSwansonColostomyBag</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - HandShoes" type="CollectionObject">
+    <physics>
+      <type>box</type>
+      <size>0.5,0.2,0.4</size>
+      <center>0,0.1,0</center>
+    </physics>
+    <model>
+      <type>prop</type>
+      <name>prp_joeHandShoes_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <collectablehandler>
+      <name>JoeSwansonHandShoes</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - Nightstick" type="CollectionObject">
+    <physics>
+      <type>box</type>
+      <size>0.2,0.5,1.2</size>
+      <center>0,0,0.3</center>
+    </physics>
+    <model>
+      <type>prop</type>
+      <name>prp_nightstick_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <collectablehandler>
+      <name>JoeSwansonNightstick</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - Revolver" type="CollectionObject">
+    <physics>
+      <type>box</type>
+      <size>0.2,0.2,0.3</size>
+      <center>0,0,0.08</center>
+    </physics>
+    <model>
+      <type>prop</type>
+      <name>prp_handgun_mdl</name>
+      <scale>1.0</scale>
+      <hasFaceController>false</hasFaceController>
+    </model>
+    <collectablehandler>
+      <name>JoeSwansonRevolver</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - BloodToilet" type="CollectionObject">
+    <collectablehandler>
+      <name>JoeSwansonBloodToilet</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - PeeToilet" type="CollectionObject">
+    <collectablehandler>
+      <name>JoeSwansonPeeToilet</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Collect - Joe - StairElevator" type="CollectionObject">
+    <collectablehandler>
+      <name>JoeSwansonStairElevator</name>
+    </collectablehandler>
+  </object>
+
+  <object name="Mouthwash Bottle" type="CollectableObject">
+    <model>
+      <name>prp_mouthWash_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.3,0.45,0.3</size>
+      <center>0,0.225,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+
+  <!--=======================================================-->
+  <!--=======================Thrift Store====================-->
+  <!--=======================================================-->
+
+  <object name="Jim Kaplan" type="Quest Giver">
+    <model>
+      <name>npc_custom_jimKaplan_mdl</name>
+      <type>npc</type>
+      <hasFaceController>true</hasFaceController>
+    </model>
+    <animationtree>npc/Generic Casual Male.xml</animationtree>
+    <interactionhandler>
+      <interactiongatewayfunc>JimKaplanInteractFunc</interactiongatewayfunc>
+    </interactionhandler>
+    <audio>
+      <clip.List>jimKaplanBlurbRandom</clip.List>
+    </audio>
+  </object>
+  
+  <object name="Dinner Jacket" type="CollectableObject">
+    <model>
+      <name>prp_dressJacket_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.2,0.9,0.7</size>
+      <center>0,-0.3,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Kimono" type="CollectableObject">
+    <model>
+      <name>prp_kimono_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.2,0.9,0.7</size>
+      <center>0,-0.3,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <object name="Bill Cosby Sweater" type="CollectableObject">
+    <model>
+      <name>prp_cosbySweater_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>0.6,0.1,0.7</size>
+      <center>0,0,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object>
+
+  <!--object name="Balloon Nylon" type="CollectableObject">
+    <model>
+      <name>prp_cardboardBox_mdl</name>
+      <type>prop</type>
+    </model>
+    <physics>
+      <type>box</type>
+      <size>1.2,1,1</size>
+      <center>0,0.5,0</center>
+    </physics>
+    <questcollectable>
+      <collectedfunc>QuestObjectCollectedFunc</collectedfunc>
+    </questcollectable>
+  </object-->
+  
+  <object name="ISD - Alan Rickmans Answering Machine" type="InteractiveSetDecoration">
+    <model>
+      <name>prp_answeringMachine_mdl</name>
+      <type>prop</type>
+      <scale>1.0</scale>
+    </model>
+    <physics>
+      <type>sphere</type>
+      <radius>0.25</radius>
+    </physics>
+    <statefulObject>
+      <inittype>Normal</inittype>
+      <state.List>
+        <name>Normal</name>
+        <action.List>
+          <func>Show</func>
+        </action.List>
+      </state.List>
+      <state.List>
+        <name>Interact</name>
+        <time>1.8</time>
+        <action.List>
+          <func>PlayExclusiveCharacterSound</func>
+          <param0>alanRickmanMachine</param0>
+        </action.List>
+        <action.List>
+          <func>SetEffect</func>
+          <param0>vfx_generic_musicnotes</param0>
+          <param1>Play</param1>
+        </action.List>
+      </state.List>
+     </statefulObject>
+    <ISD>
+      <description>Alan_Rickmans_answering_Machine_text_id</description>
+      <rewards>
+        <xp>50</xp>
+        <clams>25</clams>
+      </rewards>
+    </ISD>
+    <audio>
+      <clip.List>alanRickmanMachine</clip.List>
+    </audio>
+  </object>
+  
+  <object name="Collect - ThriftStore - BookEnd" type="CollectionObject">
+    <collectablehandler>
+      <name>ThriftStoreBookEnd</name>
+    </collectablehandler>
+  </object>
+  
+  <object name="Collect - ThriftStore - CatHat" type="CollectionObject">
+    <collectablehandler>
+      <name>ThriftStoreCatHat</name>
+    </collectablehandler>
+  </object>
+  
+  <object name="Collect - ThriftStore - SockBin" type="CollectionObject">
+    <collectablehandler>
+      <name>ThriftStoreSockBin</name>
+    </collectablehandler>
+  </object>
+</objects>

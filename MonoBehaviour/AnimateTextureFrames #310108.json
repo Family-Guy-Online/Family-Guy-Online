@@ -1,0 +1,18 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 212
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 96
+  },
+  "m_Name": "",
+  "rows": 1,
+  "columns": 2,
+  "FPS": 3.0,
+  "hideRowSeam": 0.0,
+  "hideColumnSeam": 0.0,
+  "useAllMaterials": 0
+}

@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 19
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 12
+  },
+  "m_Name": "",
+  "m_bDoLogging": 0,
+  "positionOffsetZ": 0.0,
+  "positionOffsetY": 0.0,
+  "positionOffsetX": 0.0,
+  "infinitePlay": 0,
+  "startTime": 0.0,
+  "playTime": 8.0,
+  "fadeTime": 8.0,
+  "playAutomatically": 0,
+  "attachToVictim": 1,
+  "attachToPlayer": 1,
+  "attachToBoneName": "",
+  "localOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "localRotation": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "followBonePosition": 1,
+  "followBoneRotation": 0,
+  "playIntroAnimation": 0,
+  "playOutroAnimation": 0,
+  "state": 0,
+  "playerObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "victimObj": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "elapsedTime": 0.0,
+  "m_guiId": -1
+}

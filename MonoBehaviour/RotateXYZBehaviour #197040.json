@@ -1,0 +1,15 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 27
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 11
+  },
+  "m_Name": "",
+  "Xspeed": 0.0,
+  "Yspeed": 200.0,
+  "Zspeed": 0.0
+}

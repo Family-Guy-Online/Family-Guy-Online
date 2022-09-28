@@ -1,0 +1,25 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 50
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 19
+  },
+  "m_Name": "",
+  "xamplitude": 0.0,
+  "xfrequency": 0.0,
+  "xphase": 0.0,
+  "xoffset": 0.0,
+  "yamplitude": 10.0,
+  "yfrequency": 0.5,
+  "yphase": 0.0,
+  "yoffset": -3.0,
+  "zamplitude": 0.5,
+  "zfrequency": 0.5,
+  "zphase": 0.0,
+  "zoffset": 0.0,
+  "VectorType": 0
+}

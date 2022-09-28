@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<audio>
+
+  <audiosource name="bgmusic">
+    <music1>suburbsOverworld1</music1>
+    <music2>suburbsOverworld2</music2>
+    <music3>suburbsOverworld3</music3>
+  </audiosource>
+
+  <audiosource name="combatmusic">
+    <music1>genericBoss</music1>
+  </audiosource>
+
+  <audiosource name="stinger1">
+    <clipname>genericBossStinger</clipname>
+    <cliptype>stinger</cliptype>
+    <minDist>500.0</minDist>
+    <maxDist>500.0</maxDist>
+    <is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="klyeBlurbRandom">
+    <clipname>kyleBlurbRandom</clipname>
+    <cliptype>sfx</cliptype>
+    <minDist>5.0</minDist>
+    <maxDist>30.0</maxDist>
+    <is3D>true</is3D>
+  </audiosource>
+
+</audio>

@@ -1,0 +1,18 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 154
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 73
+  },
+  "m_Name": "",
+  "PrefabToSpawn": {
+    "m_FileID": 0,
+    "m_PathID": 77
+  },
+  "SpawnInSeconds": 0.0,
+  "SpawnCountdown": 0.0
+}

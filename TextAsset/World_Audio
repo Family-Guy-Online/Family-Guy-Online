@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<audio>
+  
+  <audiosource name="bgmusic">
+    <music1>suburbsOverworld1</music1>
+    <music2>suburbsOverworld2</music2>
+    <music3>suburbsOverworld3</music3>
+  </audiosource>
+
+  <audiosource name="combatmusic">
+    <music1>genericBattle</music1>
+    <music2>timedQuest</music2>
+  </audiosource>
+  
+  <!-- MultiVerse - BG Ambience - White Room
+  <audiosource name="vanillamusic_multiverse_room">
+    <music1>multiverseRoom</music1>
+  </audiosource>
+  -->
+
+  <!--  
+  <audiosource name="vanillamusic_griffinhouse">
+    <music1>bg_music_1</music1>
+    <music2>bg_music_2</music2>
+  </audiosource>
+  -->
+
+  <audiosource name="vanillamusic_church_interior">
+    <music1>vanillaChurch</music1>
+  </audiosource>
+
+  <audiosource name="vanillamusic_thriftstore">
+    <music1>vanillaStore</music1>
+  </audiosource>   
+  
+  <audiosource name="vanillamusic_herbertshouse">
+    <music1>vanillaGayClub</music1>
+  </audiosource>
+
+  <audiosource name="vanillamusic_quagmirehouse">
+    <music1>vanillaXxx</music1>
+  </audiosource>    
+  
+ <audiosource name="stinger1">
+    <clipname>genericStinger</clipname>
+    <cliptype>sfx</cliptype>
+    <minDist>500.0</minDist>
+    <maxDist>500.0</maxDist>
+    <is3D>false</is3D>
+  </audiosource>
+
+  <!--<audiosource name="projectHouseSequenceIntro">
+    <clipname>projectHouseSequenceIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="projectHouseSequenceFail">
+    <clipname>projectHouseSequenceFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>-->
+
+  <audiosource name="stewieProjectHouseComplete">
+    <clipname>stewieProjectHouseComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>    
+  
+  <audiosource name="peterBlurbRandom">
+    <clipname>peterBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterBlurbGreeting">
+    <clipname>peterBlurbGreeting</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterQuestFailRandom">
+    <clipname>peterQuestFailRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterQuestCompleteRandom">
+    <clipname>peterQuestCompleteRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>  
+  
+  <audiosource name="chrisBlurbRandom">
+    <clipname>chrisBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisQuestFailRandom">
+    <clipname>chrisQuestFailRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="chrisQuestCompleteRandom">
+    <clipname>chrisQuestCompleteRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>   
+  
+  <audiosource name="chrisBlurbKyle">
+    <clipname>chrisBlurbKyle</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisLogTrapIntro">
+    <clipname>chrisLogTrapIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisLogTrapFail">
+    <clipname>chrisLogTrapFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisLogTrapComplete">
+    <clipname>chrisLogTrapComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisBullyPaybackIntro">
+    <clipname>chrisBullyPaybackIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="adamBlurbRandom">
+    <clipname>adamBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="adamBlurbMisdeed">
+    <clipname>adamBlurbMisdeed</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  
+  <audiosource name="chrisBullyPaybackComplete">
+    <clipname>chrisBullyPaybackComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="chrisStandUp">
+    <clipname>chrisStandUp</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterLoisSignsIntro">
+    <clipname>peterLoisSignsIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="peterLoisSignsFail">
+    <clipname>peterLoisSignsFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterLoisSignsComplete">
+    <clipname>peterLoisSignsComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterCosbySweaterIntro">
+    <clipname>peterCosbySweaterIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="peterCosbySweaterFail">
+    <clipname>peterCosbySweaterFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterCosbySweaterComplete">
+    <clipname>peterCosbySweaterComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterHatWeightIntro">
+    <clipname>peterHatWeightIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="peterHatWeightFail">
+    <clipname>peterHatWeightFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterHatWeightComplete">
+    <clipname>peterHatWeightComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="peterHotairBaloonIntro">
+    <clipname>peterHotairBaloonIntro</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="peterHotairBaloonFail">
+    <clipname>peterHotairBaloonFail</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="peterHotairBaloonComplete">
+    <clipname>peterHotairBaloonComplete</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+ 
+  <audiosource name="stewieBlurbRandom">
+    <clipname>stewieBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+   <audiosource name="stewieQuestFailRandom">
+    <clipname>stewieQuestFailRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+   <audiosource name="stewieQuestCompleteRandom">
+    <clipname>stewieQuestCompleteRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource> 
+  
+  <audiosource name="stewieSandbox">
+    <clipname>stewieSandbox</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="loisBlurbRandom">
+    <clipname>loisBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="quagmireBlurbRandom">
+    <clipname>quagmireBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="ratsegBlurbRandom">
+    <clipname>ratsegBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="drHartmanBlurbRandom">
+    <clipname>drHartmanBlurbRandom</clipname>
+	<cliptype>sfx</cliptype>
+	<minDist>500.0</minDist>
+	<maxDist>500.0</maxDist>
+	<is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="tutorialSequence">
+    <clipname>tutorialSequence</clipname>
+    <cliptype>sfx</cliptype>
+    <minDist>500.0</minDist>
+    <maxDist>500.0</maxDist>
+    <is3D>false</is3D>
+  </audiosource>
+
+  <audiosource name="destroyLoisSign">
+    <clipname>destroyLoisSign</clipname>
+    <cliptype>sfx</cliptype>
+    <minDist>500.0</minDist>
+    <maxDist>500.0</maxDist>
+    <is3D>false</is3D>
+  </audiosource>
+  
+  <audiosource name="aud_ambient_suburbsStreet">
+    <clipname>suburbsAmbient</clipname>
+    <cliptype>ambient</cliptype>
+    <minDist>500.0</minDist>
+    <maxDist>500.0</maxDist>
+    <autoplay>true</autoplay>
+    <loop>true</loop>
+    <volume>0.4</volume>
+  </audiosource>
+  
+</audio>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<camerainstructions>
+	<camerainstruction name="public" />
+	<camerainstruction name="onboarding_tutorial_quest" />
+</camerainstructions>

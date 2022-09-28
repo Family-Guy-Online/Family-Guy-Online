@@ -1,0 +1,17 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 180
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 83
+  },
+  "m_Name": "",
+  "MIN_DISTANCE": 10,
+  "MAX_DISTANCE": 10,
+  "loop": 1,
+  "clipName": "kindergartenFight",
+  "playTime": -1.0
+}
